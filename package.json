@@ -4,12 +4,15 @@
   "license": "MIT",
   "author": "Julius Guevarra",
   "homepage": "https://mathieufd.github.io/movx",
+  "resolutions": {
+    "@types/react": "~17.0.47"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build && cd dist && cp index.html 200.html",
     "serve": "vite preview",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@types/webfontloader": "^1.6.32",
